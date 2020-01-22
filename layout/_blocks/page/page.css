@@ -1,0 +1,21 @@
+@import "../normalize/normalize.css";
+@import "../reset/reset.css";
+@import "../vars-color/vars-color.css";
+@import "../box/box.css";
+@import "../button/button.css";
+@import "../title/title.css";
+@import "../text/text.css";
+@import "../icon/icon.css";
+@import "../image-box/image-box.css";
+@import "../visually-hidden/visually-hidden.css";
+
+.page {
+
+    &__container {
+        overflow-x: hidden;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
