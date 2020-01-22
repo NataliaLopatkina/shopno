@@ -10,9 +10,10 @@
 @import "../visually-hidden/visually-hidden.css";
 
 .page {
+    font-family: "Montserrat", "Arial", sans-serif;
 
     &__container {
-        overflow-x: hidden;
+        /* overflow: hidden; */
     }
 
     a {

@@ -1,0 +1,49 @@
+@import "../logo/logo.css";
+@import "../button-menu/button-menu.css";
+
+.nav {
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition-property: opacity, visibility, height;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+
+        &.is-active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    &__link {
+        font-size: 17px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, .6);
+        text-transform: uppercase;
+        text-align: right;
+        display: block;
+        transition: color 0.25s ease;
+
+        &:hover {
+            color: var(--black);
+        }
+    }
+}

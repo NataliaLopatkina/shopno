@@ -1,0 +1,12 @@
+mixin hero()
+    div(class="hero")
+        div(class="box hero__box")
+            h1(class="hero__title") Say hello to <span class="hero__title--mark">shopno!</span><br>
+                <span class="hero__title--mark">Agency</span> corporate shopno theme
+
+            include ../../_blocks/button/button.pug
+            +button({
+                text: "Contact us",
+            })(class="hero__button")
+
+    // END .hero

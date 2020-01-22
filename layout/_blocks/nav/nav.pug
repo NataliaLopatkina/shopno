@@ -1,0 +1,39 @@
+mixin nav()
+    nav(class="nav")
+        div(class="nav__actions")
+            include ../../_blocks/logo/logo.pug
+            +logo()
+
+            include ../../_blocks/button-menu/button-menu.pug
+            +button-menu()
+
+        div(class="nav__menu")
+            ul(class="nav__list")
+                - 
+                    var links = [
+                        {
+                            text: "About us",
+                        },
+
+                        {
+                            text: "Featured works",
+                        },
+
+                        {
+                            text: "Our services",
+                        },
+
+                        {
+                            text: "Small team",
+                        },
+
+                        {
+                            text: "What they says",
+                        }
+                    ]
+
+                each item in links
+                    li(class="nav__item")
+                        a(class="nav__link" href="#5") !{item.text}
+
+    // END .nav

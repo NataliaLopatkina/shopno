@@ -1,0 +1,41 @@
+.hero {
+    padding-top: 99px;
+    padding-bottom: 196px;
+    background: #eff0f2;
+    text-align: center;
+    
+    &__box {
+        position: relative;
+
+        &:after {
+            content: url("../images/icons/juice.png");
+            display: block;
+            width: 80px;
+            height: 92px;
+            position: absolute;
+            right: 107px;
+            bottom: -68px;
+        }
+    }
+
+    &__title {
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 1.3px;
+        line-height: calc(59 / 45);
+        color: #505050;
+        text-transform: uppercase;
+        margin-bottom: 138px;
+    }
+
+    &__title--mark {
+        background: rgba(118, 244, 234, 0.5);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

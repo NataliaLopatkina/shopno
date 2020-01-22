@@ -1,50 +1,30 @@
 .button {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: calc(26 / 20);
-    color: #f2f2f2;
+    letter-spacing: 2.16px;
+    line-height: calc(28 / 18);
+    color: #000000;
+    text-transform: uppercase;
     display: block;
+    padding: 10px 44px;
     box-sizing: border-box;
-    background: var(--main-color);
-    border: 2px solid transparent;
-    border-radius: 7px;
-    transition-property: color, background, border;
+    background: transparent;
+    border: 2px solid #00000080;
+    border-radius: 2px;
+    transition-property: color, background;
     transition-duration: 0.25s;
     transition-timing-function: ease;
 
     &:hover {
-        color: var(--main-color);
-        background: transparent;
-        border: 2px solid var(--main-color);
+        color: rgba(239, 240, 242, 0.99);
+        background: #000000;
+    }
+
+    &:focus {
+        outline: none;
     }
 
     &:active {
         opacity: 0.8;
-    }
-
-    &--transparent {
-        font-size: 24px;
-        line-height: calc(26 / 24);
-        color: var(--main-color);
-        background: transparent;
-        border: 2px solid var(--main-color);
-
-        &:hover {
-            color: var(--white);
-            background: var(--main-color);
-            border: 2px solid transparent;
-        }
-    }
-
-    &--size-l {
-        padding: 14px 27px
-    }
-
-    &--size-m {
-        padding: 7px 29px;
-    }
-
-    &--size-s {
-        padding: 10px 11px
     }
 }

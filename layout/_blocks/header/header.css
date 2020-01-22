@@ -1,0 +1,7 @@
+@import "../nav/nav.css";
+
+.header {
+    background: rgba(239, 240, 242, 0.99);
+    padding-top: 64px;
+    padding-bottom: 64px;
+}

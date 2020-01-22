@@ -1,0 +1,12 @@
+@import "../advantages/advantages.css";
+
+.about-us {
+    background: #f8fafa;
+    text-align: center;
+    padding-top: 129px;
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+}
