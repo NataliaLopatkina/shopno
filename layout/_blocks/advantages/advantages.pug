@@ -1,0 +1,18 @@
+mixin advantages()
+    div(class="advantages")
+        div(class="advantages__slider")
+            include ../../_blocks/advantage-images/advantage-images.pug
+            +advantage-images()(class="advantages__images")
+
+            include ../../_blocks/controls/controls.pug
+            +controls()
+
+        div(class="advantages__text-box")
+            p(class="advantages__title") We actually do amazing works
+            p(class="advantages__text") A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
+            p(class="advantages__text") Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+
+            p(class="advantages__title advantages__title--small") Why we are the great?
+            p(class="advantages__text") A visual approach is an approach to a runway at an airport conducted under instrument flight rules. <br> The preceding aircraft in approach correct sight.
+
+    // END advantages

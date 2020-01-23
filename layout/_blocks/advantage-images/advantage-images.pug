@@ -1,0 +1,35 @@
+mixin advantage-images()
+    div(class="advantage-images")&attributes(attributes)
+        ul(class="advantage-images__list")
+
+            -
+                var images = [
+                    {
+                        data: "1",
+                        image: "advantage-1",
+                    },
+
+                    {
+                        data: "2",
+                        image: "advantage-1",
+                    },
+
+                    {
+                        data: "3",
+                        image: "advantage-1"
+                    },
+
+                    {
+                        data: "4",
+                        image: "advantage-1"
+                    }
+                ]
+
+            each item in images
+                li(class="image-box advantage-images__item not-active" data-slide=item.data)
+                    img(class="image-box__image",
+                        src="images/advantages/" + item.image + ".jpg",
+                        srcset="images/advantages/" + item.image + "@2x" + ".jpg 2x",
+                        alt=item.image)
+
+    // END .advantage-images

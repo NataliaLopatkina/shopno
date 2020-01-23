@@ -44,24 +44,54 @@
                     <h2 class="title about-us__title">About us</h2>
                     <p class="text about-us__text">Lorem ipsum dolor sit amet event landing template</p>
                     <div class="advantages">
-                        <div class="advantage-images">
-                            <ul class="advantage-images__list">
-                                <li class="image-box advantage-images__item"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
-                                <li class="image-box advantage-images__item"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
-                                <li class="image-box advantage-images__item"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
-                                <li class="image-box advantage-images__item"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
-                            </ul>
+                        <div class="advantages__slider">
+                            <div class="advantage-images advantages__images">
+                                <ul class="advantage-images__list">
+                                    <li class="image-box advantage-images__item not-active" data-slide="1"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
+                                    <li class="image-box advantage-images__item not-active" data-slide="2"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
+                                    <li class="image-box advantage-images__item not-active" data-slide="3"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
+                                    <li class="image-box advantage-images__item not-active" data-slide="4"><img class="image-box__image" src="images/advantages/advantage-1.jpg" srcset="images/advantages/advantage-1@2x.jpg 2x" alt="advantage-1" /></li>
+                                </ul>
+                            </div><!-- END .advantage-images-->
+                            <div class="controls">
+                                <ul class="controls__list">
+                                    <li class="controls__item"><button class="controls__button is-active" type="button" data-button="1"></button></li>
+                                    <li class="controls__item"><button class="controls__button" type="button" data-button="2"></button></li>
+                                    <li class="controls__item"><button class="controls__button" type="button" data-button="3"></button></li>
+                                    <li class="controls__item"><button class="controls__button" type="button" data-button="4"></button></li>
+                                </ul>
+                            </div><!-- END .controls-->
                         </div>
                         <div class="advantages__text-box">
-                            <p class="advntages__title">We atually do amazing works</p>
-                            <p class="advntages__text">A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.</p>
-                            <p class="advntages__text">Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
-                            <p class="advantages__title">Why we are the great?</p>
-                            <p class="advnatges__text">A visual approach is an approach to a runway at an airport conducted under instrument flight rules. <br> The preceding aircraft in approach correct sight.</p>
+                            <p class="advantages__title">We actually do amazing works</p>
+                            <p class="advantages__text">A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.</p>
+                            <p class="advantages__text">Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+                            <p class="advantages__title advantages__title--small">Why we are the great?</p>
+                            <p class="advantages__text">A visual approach is an approach to a runway at an airport conducted under instrument flight rules. <br> The preceding aircraft in approach correct sight.</p>
                         </div>
-                    </div>
+                    </div><!-- END advantages-->
                 </div>
             </section><!-- END .about-us-->
+            <section class="portfolio">
+                <div class="box portfolio__box">
+                    <h3 class="title portfolio__title">Featured works</h3>
+                    <p class="text text--spacing portfolio__text">Lorem ipsum dolor sit amet event landing template</p>
+                    <ul class="portfolio__list">
+                        <li class="image-box portfolio__item"><img class="image-box__image" src="images/portfolio/work-1.jpg" srcset="images/portfolio/work-1.jpg @2x" alt="work-1" /></li>
+                        <li class="image-box portfolio__item"><img class="image-box__image" src="images/portfolio/work-2.jpg" srcset="images/portfolio/work-2.jpg @2x" alt="work-2" /></li>
+                        <li class="image-box portfolio__item"><img class="image-box__image" src="images/portfolio/work-3.jpg" srcset="images/portfolio/work-3.jpg @2x" alt="work-3" /></li>
+                        <li class="image-box portfolio__item"><img class="image-box__image" src="images/portfolio/work-4.jpg" srcset="images/portfolio/work-4.jpg @2x" alt="work-4" /></li>
+                        <li class="image-box portfolio__item"><img class="image-box__image" src="images/portfolio/work-5.jpg" srcset="images/portfolio/work-5.jpg @2x" alt="work-5" /></li>
+                        <li class="image-box portfolio__item"><img class="image-box__image" src="images/portfolio/work-6.jpg" srcset="images/portfolio/work-6.jpg @2x" alt="work-6" /></li>
+                    </ul>
+                </div>
+            </section><!-- END .portfolio-->
+            <section class="services">
+                <div class="box">
+                    <h3 class="title services__title">Our services</h3>
+                    <p class="text services__text">Lorem ipsum dolor sit amet event landing template</p>
+                </div>
+            </section><!-- END .services-->
         </main>
     </div>
     <script src="scripts/script.js"></script>

@@ -2,11 +2,15 @@
 
 .about-us {
     background: #f8fafa;
-    text-align: center;
-    padding-top: 129px;
+    padding-top: 121px;
 
     &__title {
-        margin-bottom: 17px;
+        padding-left: 23px;
+        margin-bottom: 4px;
     }
 
+    &__text {
+        margin-bottom: 140px;
+    }
+   
 }

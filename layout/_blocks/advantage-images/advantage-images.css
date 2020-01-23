@@ -1,0 +1,44 @@
+.advantage-images {
+    padding-left: 80px;
+    padding-right: 43px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        width: 479px;
+        height: 412px;
+        background: #eff0f2;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 36px;
+        margin: auto;
+    }
+
+    &__list {
+        list-style: none;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__item {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+        transform: rotate(-360deg);
+        transition-property: opacity, visibility, transform;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+
+        &.not-active {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            transform: rotate(0);
+        }
+    }
+}

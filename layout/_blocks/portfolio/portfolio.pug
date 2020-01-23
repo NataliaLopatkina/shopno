@@ -1,0 +1,42 @@
+mixin portfolio()
+    section(class="portfolio")
+        div(class="box portfolio__box")
+            h3(class="title portfolio__title") Featured works
+            p(class="text text--spacing portfolio__text") Lorem ipsum dolor sit amet event landing template
+
+            ul(class="portfolio__list")
+                -
+                    var list = [
+                        {
+                            image: "work-1",
+                        },
+
+                        {
+                            image: "work-2",
+                        },
+
+                        {
+                            image: "work-3",
+                        },
+
+                        {
+                            image: "work-4",
+                        },
+
+                        {
+                            image: "work-5",
+                        },
+
+                        {
+                            image: "work-6",
+                        },
+                    ]
+
+                each item in list
+                    li(class="image-box portfolio__item")
+                        img(class="image-box__image",
+                            src="images/portfolio/" + item.image + ".jpg",
+                            srcset="images/portfolio/" + item.image + ".jpg @2x",
+                            alt=item.image)
+
+    // END .portfolio

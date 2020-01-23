@@ -4,41 +4,7 @@ mixin about-us()
             h2(class="title about-us__title") About us
             p(class="text about-us__text") Lorem ipsum dolor sit amet event landing template
 
-            div(class="advantages")
-                div(class="advantage-images")
-                    ul(class="advantage-images__list")
-
-                        -
-                            var images = [
-                                {
-                                    image: "advantage-1",
-                                },
-
-                                {
-                                    image: "advantage-1",
-                                },
-
-                                {
-                                    image: "advantage-1"
-                                },
-
-                                {
-                                    image: "advantage-1"
-                                }
-                            ]
-
-                        each item in images
-                            li(class="image-box advantage-images__item")
-                                img(class="image-box__image",
-                                    src="images/advantages/" + item.image + ".jpg",
-                                    srcset="images/advantages/" + item.image + "@2x" + ".jpg 2x",
-                                    alt=item.image)
-                div(class="advantages__text-box")
-                    p(class="advntages__title") We atually do amazing works
-                    p(class="advntages__text") A visual approach is an approach to a runway at an airport conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
-                    p(class="advntages__text") Preceding aircraft in approach correct sight. conducted under instrument flight rules.
-
-                    p(class="advantages__title") Why we are the great?
-                    p(class="advnatges__text") A visual approach is an approach to a runway at an airport conducted under instrument flight rules. <br> The preceding aircraft in approach correct sight.
+            include ../../_blocks/advantages/advantages.pug
+            +advantages()
     
     // END .about-us

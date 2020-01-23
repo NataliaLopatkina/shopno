@@ -1,0 +1,49 @@
+@import "../advantage-images/advantage-images.css";
+@import "../controls/controls.css";
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+    
+    &__images {
+        margin-bottom: 38px;
+    }
+
+    &__text-box {
+        width: 513px;
+    }
+
+    &__title {
+        font-family: "Merriweather", "Times New Roman", serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        line-height: calc(28 / 20);
+        color: rgba(0, 0, 0, 0.75);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    &__text {
+        font-family: "Raleway", "Arial", sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        line-height: calc(28 / 16);
+        opacity: 0.74;
+        color: rgba(0, 0, 0, 0.74);
+        max-width: 476px;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title--small {
+        font-size: 17px;
+        letter-spacing: 1.4px;
+        margin-top: 32px;
+        margin-bottom: 14px;
+    }
+}

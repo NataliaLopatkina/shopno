@@ -1,0 +1,28 @@
+.portfolio {
+    padding-top: 121px;
+    padding-bottom: 122px;
+
+    &__box {
+        overflow: hidden;
+    }
+
+    &__title {
+        padding-left: 42px;
+        margin-bottom: 3px;
+    }
+
+    &__text {
+        margin-bottom: 115px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: -7px;
+    }
+
+    &__item {
+        margin: 7px;
+    }
+}
