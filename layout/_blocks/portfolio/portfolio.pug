@@ -1,7 +1,7 @@
 mixin portfolio()
     section(class="portfolio")
         div(class="box portfolio__box")
-            h3(class="title portfolio__title") Featured works
+            h3(class="title title--spacing portfolio__title") Featured works
             p(class="text text--spacing portfolio__text") Lorem ipsum dolor sit amet event landing template
 
             ul(class="portfolio__list")
@@ -36,7 +36,7 @@ mixin portfolio()
                     li(class="image-box portfolio__item")
                         img(class="image-box__image",
                             src="images/portfolio/" + item.image + ".jpg",
-                            srcset="images/portfolio/" + item.image + ".jpg @2x",
+                            srcset="images/portfolio/" + item.image + ".jpg 2x",
                             alt=item.image)
 
     // END .portfolio

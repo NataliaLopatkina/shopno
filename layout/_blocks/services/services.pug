@@ -1,7 +1,69 @@
 mixin services()
     section(class="services")
         div(class="box")
-            h3(class="title services__title") Our services
-            p(class="text services__text") Lorem ipsum dolor sit amet event landing template
+            h3(class="title title--spacing services__title") Our services
+            p(class="text text--spacing services__text") Lorem ipsum dolor sit amet event landing template
+
+            ul(class="services__list")
+                -
+                    var list = [
+                        {
+                            modClass: " services__item--1",
+                            title: "Designing is the cool love for.",
+                            text: "Our most popular service is our Virtual Receptionist. We know that sometimes",
+                            number: "1",
+                        },
+
+                        {
+                            modClass: " services__item--small services__item--2",
+                            title: "Cool psd design",
+                            text: "Our most popular service is our we know that sometimes it’s something and you middle most",
+                            number: "2",
+                        },
+
+                        {
+                            modClass: " services__item--3",
+                            title: "Designing is the cool",
+                            text: "Our most popular service is our Virtual Receptionist. We know that",
+                            number: "3",
+                        },
+
+                        {
+                            modClass: " services__item--small services__item--4",
+                            title: "Psd to html kori",
+                            text: "We know that sometimes it’s something and you middle most",
+                            number: "4",
+                        },
+
+                        {
+                            modClass: " services__item--small services__item--5",
+                            title: "Cool psd design",
+                            text: "Our most popular service is our new virtual Receptionist you middle most",
+                            number: "5",
+                        },
+
+                        {
+                            modClass: " services__item--6",
+                            title: "Designing is the cool for",
+                            text: "Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most",
+                            number: "6",
+                        },
+                    ]
+
+                each item in list
+                    li(class="services__item" + item.modClass)
+                        p(class="services__item-title") !{item.title}
+                        p(class="services__item-text") !{item.text}
+                        button(class="services__button" type="button" data-button=item.number)
+                            span(class="services__button-text") Know more
+                            svg(class="icon services__button-icon")
+                                use(xlink:href="images/svg-sprite/svg-sprite.svg#arrow")
+
+                        include ../../_blocks/service-details/service-details.pug
+                        +service-details({
+                            title: item.title,
+                            text: item.text,
+                            data: item.number,
+                        })
 
     // END .services

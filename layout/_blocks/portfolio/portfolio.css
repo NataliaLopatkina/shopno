@@ -1,6 +1,6 @@
 .portfolio {
     padding-top: 121px;
-    padding-bottom: 122px;
+    padding-bottom: 125px;
 
     &__box {
         overflow: hidden;
@@ -19,10 +19,11 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        margin: -7px;
+        margin: -6px -7px;
     }
 
     &__item {
-        margin: 7px;
+        width: calc(100% / 3 - 14px);
+        margin: 6px 7px;
     }
 }

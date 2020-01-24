@@ -1,0 +1,148 @@
+@import "../service-details/service-details.css";
+
+.services {
+    background: #f9fbfb;
+    padding-top: 116px;
+
+    &__title {
+        margin-bottom: 2px;
+    }
+
+    &__text {
+        margin-bottom: 123px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: -7px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 652px;
+        height: 370px;
+        padding-left: 63px;
+        padding-bottom: 55px;
+        box-sizing: border-box;
+        margin: 7px;
+        position: relative;
+        transition-property: background, color, padding;
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background-size: cover;
+        }
+    }
+
+    &__item--small {
+        width: 472px;
+
+        & .services__details-text {
+            max-width: 350px;
+        }
+    }
+
+    &__item--1 {
+        background: url("../images/services/service-1.jpg");
+        height: 422px;
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/services/service-1@2x.jpg");
+        }
+    }
+
+    &__item--2 {
+        background: url("../images/services/service-2.jpg");
+        height: 422px;
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/services/service-2@2x.jpg");
+        }
+    }
+
+    &__item--3 {
+        background: url("../images/services/service-3.jpg");
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/services/service-3@2x.jpg");
+        }
+    }
+
+    &__item--4 {
+        background: url("../images/services/service-4.jpg");
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/services/service-4@2x.jpg");
+        }
+    }
+
+    &__item--5 {
+        background: url("../images/services/service-5.jpg");
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/services/service-5@2x.jpg");
+        }
+    }
+
+    &__item--6 {
+        background: url("../images/services/service-6.jpg");
+
+        @media(min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+            background: url("../images/services/service-6@2x.jpg");
+        }
+    }
+
+    &__item-title {
+        font-family: "Merriweather", "Times New Roman", serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: calc(29 / 20);
+        color: var(--white);
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+
+    &__item-text {
+        font-family: "Raleway", "Arial", sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        line-height: calc(25 / 16);
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 396px;
+        margin-bottom: 55px;
+    }
+
+    &__button {
+        background: transparent;
+        border: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button-text {
+        font-family: "Raleway", "Times New Roman", serif;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 0.76px;
+        color: rgba(255, 255, 255, 0.77);
+        text-transform: uppercase;
+        margin-right: 14px;
+    }
+
+    &__button-icon {
+        width: 22px;
+        height: 15px;
+        color: rgba(255, 255, 255, 0.78);
+    }
+}

@@ -438,12 +438,16 @@ button[disabled] {
 
 .title {
     font-size: 38px;
-    font-weight: 700;
-    letter-spacing: 1.8px;
+    font-weight: 800;
+    letter-spacing: 1px;
     color: rgba(0, 0, 0, 0.9);
     text-transform: uppercase;
     text-align: center;
 }
+
+.title--spacing {
+        letter-spacing: 1.4px;
+    }
 
 .text {
     font-family: "Merriweather", "Times New Roman", serif;
@@ -462,12 +466,9 @@ button[disabled] {
 .icon {
     display: inline-block;
     vertical-align: middle;
+    fill: currentColor;
+    stroke: none;
 }
-
-.icon--fill {
-        fill: currentColor;
-        stroke: none;
-    }
 
 .icon--stroke {
         stroke: currentColor;
@@ -680,8 +681,8 @@ button[disabled] {
 
 .hero__title {
         font-size: 45px;
-        font-weight: 700;
-        letter-spacing: 1.3px;
+        font-weight: 800;
+        letter-spacing: 1px;
         line-height: calc(59 / 45);
         color: #505050;
         text-transform: uppercase;
@@ -851,7 +852,7 @@ button[disabled] {
 }
 
 .about-us__title {
-        padding-left: 23px;
+        padding-left: 21px;
         margin-bottom: 4px;
     }
 
@@ -861,7 +862,7 @@ button[disabled] {
 
 .portfolio {
     padding-top: 121px;
-    padding-bottom: 122px;
+    padding-bottom: 125px;
 }
 
 .portfolio__box {
@@ -884,11 +885,227 @@ button[disabled] {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        margin: -7px;
+        margin: -6px -7px;
     }
 
 .portfolio__item {
+        width: calc(100% / 3 - 14px);
+        margin: 6px 7px;
+    }
+
+.service-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 63px 66px 56px 66px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #72f5ec;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    -webkit-transition-property: opacity, visibility, height;
+    -o-transition-property: opacity, visibility, height;
+    transition-property: opacity, visibility, height;
+    -webkit-transition-duration: 0.25s;
+         -o-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease;
+         -o-transition-timing-function: ease;
+            transition-timing-function: ease
+}
+
+.service-details.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+.service-details__title {
+        font-family: "Merriweather", "Times New Roman", serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: calc(29 / 20);
+        color: rgba(0, 0, 0, 0.83);
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+
+.service-details__text {
+        font-family: "Raleway", "Arial", sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        line-height: calc(25 / 16);
+        color: rgba(0, 0, 0, 0.75);
+        max-width: 470px;
+        margin-bottom: 55px;
+    }
+
+.service-details__button {
+        background: none;
+        border: none;
+        padding: 0;
+        display: inline-block;
+        margin-top: auto;
+    }
+
+.service-details__icon {
+        width: 17px;
+        height: 17px;
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+.services {
+    background: #f9fbfb;
+    padding-top: 116px;
+}
+
+.services__title {
+        margin-bottom: 2px;
+    }
+
+.services__text {
+        margin-bottom: 123px;
+    }
+
+.services__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        list-style: none;
+        margin: -7px;
+    }
+
+.services__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        width: 652px;
+        height: 370px;
+        padding-left: 63px;
+        padding-bottom: 55px;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         margin: 7px;
+        position: relative;
+        -webkit-transition-property: background, color, padding;
+        -o-transition-property: background, color, padding;
+        transition-property: background, color, padding;
+        -webkit-transition-duration: 0.25s;
+             -o-transition-duration: 0.25s;
+                transition-duration: 0.25s;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease
+    }
+
+.services__item--small {
+        width: 472px
+    }
+
+.services__item--small .services__details-text {
+            max-width: 350px;
+        }
+
+.services__item--1 {
+        background: url("../images/services/service-1.jpg");
+        height: 422px
+    }
+
+.services__item--2 {
+        background: url("../images/services/service-2.jpg");
+        height: 422px
+    }
+
+.services__item--3 {
+        background: url("../images/services/service-3.jpg")
+    }
+
+.services__item--4 {
+        background: url("../images/services/service-4.jpg")
+    }
+
+.services__item--5 {
+        background: url("../images/services/service-5.jpg")
+    }
+
+.services__item--6 {
+        background: url("../images/services/service-6.jpg")
+    }
+
+.services__item-title {
+        font-family: "Merriweather", "Times New Roman", serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: calc(29 / 20);
+        color: white;
+        color: var(--white);
+        text-transform: uppercase;
+        margin-bottom: 27px;
+    }
+
+.services__item-text {
+        font-family: "Raleway", "Arial", sans-serif;
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        line-height: calc(25 / 16);
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 396px;
+        margin-bottom: 55px;
+    }
+
+.services__button {
+        background: transparent;
+        border: none;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center
+    }
+
+.services__button:focus {
+            outline: none;
+        }
+
+.services__button-text {
+        font-family: "Raleway", "Times New Roman", serif;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 0.76px;
+        color: rgba(255, 255, 255, 0.77);
+        text-transform: uppercase;
+        margin-right: 14px;
+    }
+
+.services__button-icon {
+        width: 22px;
+        height: 15px;
+        color: rgba(255, 255, 255, 0.78);
     }
 
 @media (min-width: 1500px) {
@@ -935,4 +1152,35 @@ button[disabled] {
             min-width: 320px;
             max-width: 480px
 }
+        }
+
+@media(-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
+
+    .services__item {
+            background-size: cover
+    }
+
+    .services__item--1 {
+            background: url("../images/services/service-1@2x.jpg")
+    }
+
+    .services__item--2 {
+            background: url("../images/services/service-2@2x.jpg")
+    }
+
+    .services__item--3 {
+            background: url("../images/services/service-3@2x.jpg")
+    }
+
+    .services__item--4 {
+            background: url("../images/services/service-4@2x.jpg")
+    }
+
+    .services__item--5 {
+            background: url("../images/services/service-5@2x.jpg")
+    }
+
+    .services__item--6 {
+            background: url("../images/services/service-6@2x.jpg")
+    }
         }

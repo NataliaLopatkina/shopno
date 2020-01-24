@@ -1,0 +1,10 @@
+mixin service-details(obj)
+    div(class="service-details" data-details=obj.data)
+        div(class="service-details__box")
+            p(class="service-details__title") !{obj.title}
+            p(class="service-details__text") !{obj.text}
+            button(class="service-details__button" type="button")
+                svg(class="icon service-details__icon")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#cross")
+
+    // END .services-details

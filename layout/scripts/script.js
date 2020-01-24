@@ -79,3 +79,10 @@ class Slider {
 }
 
 const slider = new Slider();
+
+// Services
+
+class Services {
+}
+
+const services = new Services();
